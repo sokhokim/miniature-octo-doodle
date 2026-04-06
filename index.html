@@ -1,89 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | Rest & Restore Therapy</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rest & Restore Therapy</title>
+
+<link rel="icon" type="image/png" href="favicon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+body { margin:0; font-family:Inter, sans-serif; background:#f4f1ec; color:#4d453f;}
+.container { width:min(1200px, calc(100% - 40px)); margin:auto;}
+
+.nav { display:flex; justify-content:space-between; align-items:center; padding:20px 0;}
+.logo { display:flex; align-items:center; gap:12px;}
+.logo img { height:48px;}
+.nav-links { display:flex; gap:28px; font-weight:600;}
+.consult-btn { background:#8d6e63; color:#fff; padding:12px 20px; border-radius:999px;}
+
+.hero { display:grid; grid-template-columns:40% 60%; height:420px; border-radius:24px; overflow:hidden; background:#f6f1eb;}
+.hero-left { padding:40px; display:flex; flex-direction:column; justify-content:center;}
+.hero-title { font-family:'Cormorant Garamond', serif; font-size:3.5rem;}
+.hero-title span { color:#b9895c; font-style:italic;}
+.hero-copy { margin:14px 0;}
+.hero-btn { background:#8d6e63; color:#fff; padding:10px 18px; border-radius:999px; width:max-content;}
+
+.hero-right {
+background:
+linear-gradient(90deg, rgba(244,237,227,.7), transparent),
+url('https://images.unsplash.com/photo-1604881991720-f91add269bed?auto=format&fit=crop&w=1800&q=80') center/cover;
+}
+</style>
 </head>
+
 <body>
-<header class="site-header">
-  <div class="container nav">
-    <a href="index.html" class="brand" aria-label="Rest & Restore Therapy home">
-      <svg class="brand-mark" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M31 58C32 43 38 30 50 18" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
-        <path d="M18 46C29 41 37 31 42 17" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
-        <path d="M15 30C26 27 35 18 40 5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
-        <path d="M30 29C35 34 39 41 41 50" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
-        <path d="M35 14C41 19 47 27 50 36" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
-      </svg>
-      <span class="brand-text"><span class="big">Rest &amp;<br>Restore</span><span class="small">Therapy</span></span>
-    </a>
-    <nav class="nav-links" aria-label="Primary">
-      <a class="active" href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="team.html">Our Team</a>
-      <a href="services.html">Services</a>
-      <a href="specialties.html">Specialties</a>
-      <a href="resources.html">Resources</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <a class="consult-btn" href="contact.html">Book a Consultation</a>
+
+<div class="container">
+
+<div class="nav">
+  <div class="logo">
+    <img src="logo.png">
+    <div><strong>Rest & Restore Therapy</strong></div>
   </div>
-</header>
-<div class="top-strip">Compassionate care. Personalized support. A place to rest, heal, and grow.</div>
-<main>
-  <section class="hero-wrap">
-    <div class="container">
-      <div class="hero-card">
-        <div class="hero-left">
-          <h1 class="hero-title">Therapy that helps you <span class="accent">rest &amp; restore.</span></h1>
-          <div class="mini-line"></div>
-          <p class="hero-copy">Expert counseling for trauma, anxiety, and depression with telehealth services for clients located in Washington, Maryland, and North Carolina during sessions.</p>
-          <div class="cta-row">
-            <a class="primary-btn" href="contact.html">Book a Consultation</a>
-            <a class="ghost-link" href="about.html">Learn More About Us</a>
-          </div>
-        </div>
-        <div class="hero-right">
-          <div class="hero-quote"><span>A supportive space to feel heard, understood, and empowered.</span></div>
-        </div>
-      </div>
-      <div class="features">
-        <div class="feature"><svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 39s-11-6.9-15.2-15.2C5 16.5 9.3 10 16.3 10c3.7 0 6.1 2 7.7 4.5C25.6 12 28 10 31.7 10 38.7 10 43 16.5 39.2 23.8 35 32.1 24 39 24 39Z" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Compassionate Care</h3><p>Warm, personalized therapy grounded in empathy and practical support.</p></div>
-        <div class="feature"><svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 25a6 6 0 1 0 0-12 6 6 0 0 0 0 12ZM12 37c0-5 5-9 12-9s12 4 12 9" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg><h3>Growing Group Practice</h3><p>Built around Linda Kim’s approach, with room for future clinicians.</p></div>
-        <div class="feature"><svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 8v22" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M24 30c-7.5 0-13 3.4-16 10" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg><h3>Telehealth Available</h3><p>All services are currently offered through a HIPAA-compliant video platform.</p></div>
-        <div class="feature"><svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="7" stroke="currentColor" stroke-width="2.6"/></svg><h3>Clear Next Steps</h3><p>Start with a free 15-minute consultation to assess fit, style, and availability.</p></div>
-      </div>
-    </div>
-  </section>
-  <section class="about-section">
-    <div class="container about-grid">
-      <div class="about-left">
-        <div>
-          <div class="eyebrow">About Us</div>
-          <h2 class="about-title">A place to heal. A team that <span class="accent">truly</span> cares.</h2>
-          <p class="about-copy">Rest &amp; Restore Therapy began as a solo practice and is growing into a collaborative group practice. The mission stays the same: warm, reliable, compassionate care for clients working through trauma, anxiety, depression, and life transitions.</p>
-          <p class="about-copy">Services are telehealth only, with virtual 50-minute individual sessions for clients located in Washington, Maryland, or North Carolina during sessions.</p>
-          <a class="olive-btn" href="about.html">Read More</a>
-        </div>
-      </div>
-      <div class="about-image" aria-label="Therapy team image"></div>
-    </div>
-  </section>
-</main>
-<footer class="footer">
-  <div class="container footer-inner">
-    <div>© 2025 Rest Restore Therapy</div>
-    <div class="footer-nav">
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </div>
+
+  <div class="nav-links">
+    <span>Home</span>
+    <span>About</span>
+    <span>Services</span>
+    <span>Contact</span>
   </div>
-</footer>
+
+  <div class="consult-btn">Book a Consultation</div>
+</div>
+
+<div class="hero">
+  <div class="hero-left">
+    <div class="hero-title">
+      Therapy that helps you <span>rest & restore.</span>
+    </div>
+    <div class="hero-copy">
+      Compassionate, personalized care to help you navigate life’s challenges.
+    </div>
+    <div class="hero-btn">Get Started</div>
+  </div>
+  <div class="hero-right"></div>
+</div>
+
+</div>
+
 </body>
 </html>
